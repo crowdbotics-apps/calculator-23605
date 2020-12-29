@@ -25,17 +25,24 @@ export default class Blank extends React.Component {
   }
 
   state = {
+    TextInput_4: "",
     TextInput_5: "",
     TextInput_6: "",
-    TextInput_10: "",
-    CheckBox_8: false,
-    CheckBox_9: false,
-    TextInput_4: ""
+    TextInput_10: ""
   }
 
   render = () => (
     <View>
-      <Text style={styles.Text_3}>Patsiendi andmed</Text>
+      <View style={styles.View_18}>
+        <Text style={styles.Text_106}>data input</Text>
+      </View>
+      <TextInput
+        placeholder="kehakaal"
+        keyboardType="numeric"
+        style={styles.TextInput_4}
+        value={this.state.TextInput_4}
+        onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
+      />
       <TextInput
         placeholder="pikkus"
         keyboardType="numeric"
@@ -57,47 +64,35 @@ export default class Blank extends React.Component {
         value={this.state.TextInput_10}
         onChangeText={nextValue => this.setState({ TextInput_10: nextValue })}
       />
-      <View>
-        <View>
-          <CheckBox
-            title="mees"
-            checkedIcon="dot-circle-o"
-            uncheckedIcon="circle-o"
-            checked={this.state.CheckBox_8}
-            onPress={nextChecked => this.setState({ CheckBox_8: nextChecked })}
-          />
-          <CheckBox
-            title="naine"
-            checkedIcon="dot-circle-o"
-            uncheckedIcon="circle-o"
-            checked={this.state.CheckBox_9}
-            onPress={nextChecked => this.setState({ CheckBox_9: nextChecked })}
-          />
-        </View>
-        <View>
-          <TextInput
-            placeholder="kehakaal"
-            keyboardType="numeric"
-            style={styles.TextInput_4}
-            value={this.state.TextInput_4}
-            onChangeText={nextValue =>
-              this.setState({ TextInput_4: nextValue })
-            }
-          />
-        </View>
-      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
   View_1: {},
-  Text_3: {
-    paddingTop: 6,
+  View_18: {
+    width: "100%",
+    height: 25,
     alignSelf: "center",
-    fontSize: 16,
-    fontFamily: "Roboto-Bold",
-    textAlign: "center"
+    backgroundColor: "#b9f5ff",
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
+  },
+  Text_106: { fontFamily: "Roboto-Regular" },
+  TextInput_4: {
+    alignSelf: "flex-start",
+    backgroundColor: "#f5f8ff",
+    fontFamily: "Roboto-Regular",
+    borderColor: "#808080",
+    borderWidth: 1,
+    borderLeftWidth: 1,
+    borderRightWidth: 1,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderRadius: 6
   },
   TextInput_5: {
     alignSelf: "flex-start",
@@ -124,23 +119,6 @@ const styles = StyleSheet.create({
     borderRadius: 6
   },
   TextInput_10: {
-    alignSelf: "flex-start",
-    backgroundColor: "#f5f8ff",
-    fontFamily: "Roboto-Regular",
-    borderColor: "#808080",
-    borderWidth: 1,
-    borderLeftWidth: 1,
-    borderRightWidth: 1,
-    borderTopWidth: 1,
-    borderBottomWidth: 1,
-    borderRadius: 6
-  },
-  View_14: {},
-  View_15: {},
-  CheckBox_8: {},
-  CheckBox_9: {},
-  View_16: {},
-  TextInput_4: {
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
     fontFamily: "Roboto-Regular",
