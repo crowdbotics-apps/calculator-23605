@@ -36,6 +36,7 @@ export default class Blank extends React.Component {
       <View style={styles.View_18}>
         <Text style={styles.Text_106}>data input</Text>
       </View>
+      <Text>Enter patient metrics below:</Text>
       <TextInput
         placeholder="kehakaal"
         keyboardType="numeric"
@@ -86,7 +87,10 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Bold",
     letterSpacing: 2
   },
+  Text_114: {},
   TextInput_4: {
+    marginTop: 2,
+    marginBottom: 2,
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
     fontFamily: "Roboto-Regular",
@@ -99,6 +103,8 @@ const styles = StyleSheet.create({
     borderRadius: 6
   },
   TextInput_5: {
+    marginTop: 2,
+    marginBottom: 2,
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
     fontFamily: "Roboto-Regular",
@@ -111,6 +117,8 @@ const styles = StyleSheet.create({
     borderRadius: 6
   },
   TextInput_6: {
+    marginTop: 2,
+    marginBottom: 2,
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
     fontFamily: "Roboto-Regular",
@@ -123,6 +131,8 @@ const styles = StyleSheet.create({
     borderRadius: 6
   },
   TextInput_10: {
+    marginTop: 2,
+    marginBottom: 2,
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
     fontFamily: "Roboto-Regular",
