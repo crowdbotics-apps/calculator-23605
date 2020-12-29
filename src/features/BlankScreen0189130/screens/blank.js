@@ -60,6 +60,7 @@ export default class Blank extends React.Component {
               this.setState({ TextInput_5: nextValue })
             }
           />
+          <Text style={styles.Text_129}>cm</Text>
         </View>
         <View style={styles.View_121}>
           <TextInput
@@ -71,6 +72,7 @@ export default class Blank extends React.Component {
               this.setState({ TextInput_6: nextValue })
             }
           />
+          <Text style={styles.Text_130}>a</Text>
         </View>
         <View style={styles.View_122}>
           <TextInput
@@ -115,7 +117,7 @@ const styles = StyleSheet.create({
     alignContent: "flex-start"
   },
   TextInput_4: {
-    width: "70%",
+    width: "75%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -132,7 +134,7 @@ const styles = StyleSheet.create({
   Text_128: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
   View_120: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_5: {
-    width: "150%",
+    width: "75%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -146,9 +148,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderRadius: 6
   },
+  Text_129: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
   View_121: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_6: {
-    width: "150%",
+    width: "75%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -162,9 +165,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderRadius: 6
   },
+  Text_130: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
   View_122: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_10: {
-    width: "150%",
+    width: "75%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
