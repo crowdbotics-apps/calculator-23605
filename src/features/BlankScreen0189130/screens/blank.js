@@ -87,14 +87,31 @@ export default class Blank extends React.Component {
         </View>
       </View>
       <View style={styles.View_132}>
-        <Button title="Press me!" onPress={() => alert("Pressed!")} />
+        <Text style={styles.Text_165}>data</Text>
+        <Button
+          title="med"
+          style={styles.Button_182}
+          onPress={() => alert("Pressed!")}
+        />
+        <Button
+          title="con"
+          style={styles.Button_232}
+          onPress={() => alert("Pressed!")}
+        />
+        <Button
+          title="inf"
+          style={styles.Button_233}
+          onPress={() =>
+            this.props.navigation.navigate("CopyofCopyofBlankScreen1189133")
+          }
+        />
       </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: { justifyContent: "space-between", alignContent: "flex-start" },
+  View_1: { justifyContent: "flex-end", alignContent: "flex-start" },
   View_18: {
     width: "100%",
     height: 32,
@@ -172,7 +189,49 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     flexDirection: "row",
     flexWrap: "nowrap",
-    alignItems: "center"
+    alignItems: "flex-start",
+    alignContent: "flex-start"
   },
-  Button_219: {}
+  Text_165: {
+    width: "34%",
+    height: "100%",
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    alignSelf: "flex-start",
+    textAlign: "center"
+  },
+  Button_182: {
+    width: "22%",
+    height: "100%",
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0
+  },
+  Button_232: {
+    width: "22%",
+    height: "100%",
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0
+  },
+  Button_233: {
+    width: "22%",
+    height: "100%",
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0
+  }
 })
