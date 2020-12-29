@@ -129,11 +129,16 @@ const styles = StyleSheet.create({
     alignContent: "center"
   },
   Text_106: {
+    color: "#173136",
     backgroundColor: "#b9f5ff",
     fontFamily: "Roboto-Bold",
     letterSpacing: 2
   },
-  Text_114: { alignSelf: "flex-start" },
+  Text_114: {
+    alignSelf: "flex-start",
+    color: "#173136",
+    fontFamily: "Roboto-Regular"
+  },
   View_118: { width: "100%", alignSelf: "flex-start" },
   View_119: {
     width: "100%",
@@ -207,6 +212,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     alignSelf: "flex-start",
+    color: "#173136",
     backgroundColor: "#f5fdff",
     fontWeight: "bold",
     borderRadius: 3,
@@ -221,6 +227,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     overflow: "hidden",
+    color: "#173136",
     fontWeight: "bold",
     borderColor: "#669199",
     borderRightWidth: 1,
@@ -235,6 +242,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     overflow: "hidden",
+    color: "#173136",
     fontWeight: "bold",
     borderColor: "#669199",
     borderRightWidth: 1,
@@ -249,6 +257,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     overflow: "hidden",
+    color: "#173136",
     fontWeight: "bold"
   }
 })
