@@ -90,11 +90,13 @@ export default class Blank extends React.Component {
         <Text style={styles.Text_165}>data</Text>
         <Button
           title="med"
+          color="#b9f5ff"
           style={styles.Button_182}
           onPress={() => this.props.navigation.navigate("BlankScreen1189131")}
         />
         <Button
           title="con"
+          color="#b9f5ff"
           style={styles.Button_232}
           onPress={() =>
             this.props.navigation.navigate("CopyofBlankScreen1189132")
@@ -102,6 +104,7 @@ export default class Blank extends React.Component {
         />
         <Button
           title="inf"
+          color="#b9f5ff"
           style={styles.Button_233}
           onPress={() =>
             this.props.navigation.navigate("CopyofCopyofBlankScreen1189133")
@@ -189,6 +192,7 @@ const styles = StyleSheet.create({
     height: 32,
     marginTop: "100%",
     alignSelf: "flex-end",
+    backgroundColor: "#b9f5ff",
     flexDirection: "row",
     flexWrap: "nowrap",
     alignContent: "flex-start"
@@ -203,36 +207,44 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     alignSelf: "flex-start",
+    backgroundColor: "#f5fdff",
+    borderRadius: 3,
     textAlign: "center"
   },
   Button_182: {
-    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    overflow: "hidden",
+    borderColor: "#669199",
+    borderRightWidth: 1,
+    borderRadius: 3
   },
   Button_232: {
-    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    overflow: "hidden",
+    borderColor: "#669199",
+    borderRightWidth: 1,
+    borderRadius: 3
   },
   Button_233: {
-    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
     paddingLeft: 0,
     paddingRight: 0,
     paddingTop: 0,
-    paddingBottom: 0
+    paddingBottom: 0,
+    overflow: "hidden"
   }
 })
