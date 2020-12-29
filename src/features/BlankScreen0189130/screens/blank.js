@@ -72,7 +72,7 @@ const styles = StyleSheet.create({
   View_1: {},
   View_18: {
     width: "100%",
-    height: 25,
+    height: 32,
     alignSelf: "center",
     backgroundColor: "#b9f5ff",
     flexDirection: "row",
@@ -81,7 +81,11 @@ const styles = StyleSheet.create({
     alignItems: "center",
     alignContent: "center"
   },
-  Text_106: { fontFamily: "Roboto-Regular" },
+  Text_106: {
+    backgroundColor: "#b9f5ff",
+    fontFamily: "Roboto-Bold",
+    letterSpacing: 2
+  },
   TextInput_4: {
     alignSelf: "flex-start",
     backgroundColor: "#f5f8ff",
