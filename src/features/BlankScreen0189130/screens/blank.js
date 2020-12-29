@@ -32,11 +32,11 @@ export default class Blank extends React.Component {
   }
 
   render = () => (
-    <View>
+    <View style={styles.View_1}>
       <View style={styles.View_18}>
         <Text style={styles.Text_106}>data input</Text>
       </View>
-      <Text>Enter patient metrics below:</Text>
+      <Text style={styles.Text_114}>Enter patient metrics below:</Text>
       <View style={styles.View_118}>
         <View style={styles.View_119}>
           <TextInput
@@ -86,16 +86,19 @@ export default class Blank extends React.Component {
           />
         </View>
       </View>
+      <View style={styles.View_132}>
+        <Button title="Press me!" onPress={() => alert("Pressed!")} />
+      </View>
     </View>
   )
 }
 
 const styles = StyleSheet.create({
-  View_1: {},
+  View_1: { justifyContent: "space-between", alignContent: "flex-start" },
   View_18: {
     width: "100%",
     height: 32,
-    alignSelf: "center",
+    alignSelf: "flex-start",
     backgroundColor: "#b9f5ff",
     flexDirection: "row",
     flexWrap: "nowrap",
@@ -108,8 +111,8 @@ const styles = StyleSheet.create({
     fontFamily: "Roboto-Bold",
     letterSpacing: 2
   },
-  Text_114: {},
-  View_118: { width: "100%", alignSelf: "center" },
+  Text_114: { alignSelf: "flex-start" },
+  View_118: { width: "100%", alignSelf: "flex-start" },
   View_119: {
     width: "100%",
     flexDirection: "row",
@@ -124,11 +127,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5fdff",
     fontFamily: "Roboto-Regular",
     borderColor: "#669199",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
     borderRadius: 6
   },
   Text_128: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
@@ -141,11 +139,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5fdff",
     fontFamily: "Roboto-Regular",
     borderColor: "#669199",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
     borderRadius: 6
   },
   Text_129: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
@@ -158,11 +151,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5fdff",
     fontFamily: "Roboto-Regular",
     borderColor: "#669199",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
     borderRadius: 6
   },
   Text_130: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
@@ -175,11 +163,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#f5fdff",
     fontFamily: "Roboto-Regular",
     borderColor: "#669199",
-    borderWidth: 0,
-    borderLeftWidth: 0,
-    borderRightWidth: 0,
-    borderTopWidth: 0,
-    borderBottomWidth: 0,
     borderRadius: 6
-  }
+  },
+  View_132: {
+    width: "100%",
+    height: 32,
+    marginTop: "100%",
+    alignSelf: "flex-end",
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    alignItems: "center"
+  },
+  Button_219: {}
 })
