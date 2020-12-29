@@ -28,7 +28,11 @@ export default class Blank extends React.Component {
 
   render = () => (
     <View style={styles.View_1}>
-      <Text style={styles.Text_2}>calculator</Text>
+      <TouchableOpacity
+        onPress={() => this.props.navigation.navigate("BlankScreen0189130")}
+      >
+        <Text style={styles.Text_2}>calculator</Text>
+      </TouchableOpacity>
     </View>
   )
 }
@@ -47,6 +51,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
     fontSize: 19,
     color: "#173136",
+    backgroundColor: "#b9f5ff",
     fontFamily: "Roboto-Bold",
     textAlign: "center",
     letterSpacing: 2
