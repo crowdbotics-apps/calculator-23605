@@ -194,7 +194,7 @@ const styles = StyleSheet.create({
     alignContent: "flex-start"
   },
   Text_165: {
-    width: "34%",
+    width: "150%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
@@ -206,7 +206,7 @@ const styles = StyleSheet.create({
     textAlign: "center"
   },
   Button_182: {
-    width: "22%",
+    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
@@ -216,7 +216,7 @@ const styles = StyleSheet.create({
     paddingBottom: 0
   },
   Button_232: {
-    width: "22%",
+    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
     paddingBottom: 0
   },
   Button_233: {
-    width: "22%",
+    width: "100%",
     height: "100%",
     marginTop: 0,
     marginBottom: 0,
