@@ -91,12 +91,14 @@ export default class Blank extends React.Component {
         <Button
           title="med"
           style={styles.Button_182}
-          onPress={() => alert("Pressed!")}
+          onPress={() => this.props.navigation.navigate("BlankScreen1189131")}
         />
         <Button
           title="con"
           style={styles.Button_232}
-          onPress={() => alert("Pressed!")}
+          onPress={() =>
+            this.props.navigation.navigate("CopyofBlankScreen1189132")
+          }
         />
         <Button
           title="inf"
@@ -189,7 +191,6 @@ const styles = StyleSheet.create({
     alignSelf: "flex-end",
     flexDirection: "row",
     flexWrap: "nowrap",
-    alignItems: "flex-start",
     alignContent: "flex-start"
   },
   Text_165: {
