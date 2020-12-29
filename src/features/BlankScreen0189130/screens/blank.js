@@ -208,6 +208,7 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
     alignSelf: "flex-start",
     backgroundColor: "#f5fdff",
+    fontWeight: "bold",
     borderRadius: 3,
     textAlign: "center"
   },
@@ -220,6 +221,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     overflow: "hidden",
+    fontWeight: "bold",
     borderColor: "#669199",
     borderRightWidth: 1,
     borderRadius: 3
@@ -233,6 +235,7 @@ const styles = StyleSheet.create({
     paddingTop: 0,
     paddingBottom: 0,
     overflow: "hidden",
+    fontWeight: "bold",
     borderColor: "#669199",
     borderRightWidth: 1,
     borderRadius: 3
@@ -245,6 +248,7 @@ const styles = StyleSheet.create({
     paddingRight: 0,
     paddingTop: 0,
     paddingBottom: 0,
-    overflow: "hidden"
+    overflow: "hidden",
+    fontWeight: "bold"
   }
 })
