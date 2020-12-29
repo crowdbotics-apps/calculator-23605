@@ -37,34 +37,53 @@ export default class Blank extends React.Component {
         <Text style={styles.Text_106}>data input</Text>
       </View>
       <Text>Enter patient metrics below:</Text>
-      <TextInput
-        placeholder="kehakaal"
-        keyboardType="numeric"
-        style={styles.TextInput_4}
-        value={this.state.TextInput_4}
-        onChangeText={nextValue => this.setState({ TextInput_4: nextValue })}
-      />
-      <TextInput
-        placeholder="pikkus"
-        keyboardType="numeric"
-        style={styles.TextInput_5}
-        value={this.state.TextInput_5}
-        onChangeText={nextValue => this.setState({ TextInput_5: nextValue })}
-      />
-      <TextInput
-        placeholder="vanus"
-        keyboardType="numeric"
-        style={styles.TextInput_6}
-        value={this.state.TextInput_6}
-        onChangeText={nextValue => this.setState({ TextInput_6: nextValue })}
-      />
-      <TextInput
-        placeholder="eGFR"
-        keyboardType="numeric"
-        style={styles.TextInput_10}
-        value={this.state.TextInput_10}
-        onChangeText={nextValue => this.setState({ TextInput_10: nextValue })}
-      />
+      <View style={styles.View_118}>
+        <View style={styles.View_119}>
+          <TextInput
+            placeholder="kehakaal"
+            keyboardType="numeric"
+            style={styles.TextInput_4}
+            value={this.state.TextInput_4}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_4: nextValue })
+            }
+          />
+          <Text style={styles.Text_128}>kg</Text>
+        </View>
+        <View style={styles.View_120}>
+          <TextInput
+            placeholder="pikkus"
+            keyboardType="numeric"
+            style={styles.TextInput_5}
+            value={this.state.TextInput_5}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_5: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_121}>
+          <TextInput
+            placeholder="vanus"
+            keyboardType="numeric"
+            style={styles.TextInput_6}
+            value={this.state.TextInput_6}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_6: nextValue })
+            }
+          />
+        </View>
+        <View style={styles.View_122}>
+          <TextInput
+            placeholder="eGFR"
+            keyboardType="numeric"
+            style={styles.TextInput_10}
+            value={this.state.TextInput_10}
+            onChangeText={nextValue =>
+              this.setState({ TextInput_10: nextValue })
+            }
+          />
+        </View>
+      </View>
     </View>
   )
 }
@@ -88,7 +107,15 @@ const styles = StyleSheet.create({
     letterSpacing: 2
   },
   Text_114: {},
+  View_118: { width: "100%", alignSelf: "center" },
+  View_119: {
+    width: "100%",
+    flexDirection: "row",
+    flexWrap: "nowrap",
+    alignContent: "flex-start"
+  },
   TextInput_4: {
+    width: "70%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -102,7 +129,10 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderRadius: 6
   },
+  Text_128: { alignSelf: "flex-end", color: "#669199", textAlign: "right" },
+  View_120: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_5: {
+    width: "150%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -116,7 +146,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderRadius: 6
   },
+  View_121: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_6: {
+    width: "150%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
@@ -130,7 +162,9 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     borderRadius: 6
   },
+  View_122: { width: "100%", flexDirection: "row", flexWrap: "nowrap" },
   TextInput_10: {
+    width: "150%",
     marginTop: 2,
     marginBottom: 2,
     alignSelf: "flex-start",
