@@ -116,7 +116,11 @@ export default class Blank extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  View_1: { justifyContent: "flex-end", alignContent: "flex-start" },
+  View_1: {
+    flexWrap: "nowrap",
+    justifyContent: "center",
+    alignContent: "flex-start"
+  },
   View_18: {
     width: "100%",
     height: 32,
