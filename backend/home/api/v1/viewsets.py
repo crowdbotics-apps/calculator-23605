@@ -2,6 +2,7 @@ from rest_framework import viewsets
 from rest_framework import authentication
 from .serializers import (
     CustomTextSerializer,
+    DosagesSerializer,
     HomePageSerializer,
     IndicationsSerializer,
     MedicationsSerializer,
@@ -19,7 +20,7 @@ from home.api.v1.serializers import (
     HomePageSerializer,
     UserSerializer,
 )
-from home.models import CustomText, HomePage, Indications, Medications
+from home.models import CustomText, Dosages, HomePage, Indications, Medications
 
 
 class SignupViewSet(ModelViewSet):
@@ -75,3 +76,12 @@ class IndicationsViewSet(viewsets.ModelViewSet):
         authentication.TokenAuthentication,
     )
     queryset = Indications.objects.all()
+
+
+class DosagesViewSet(viewsets.ModelViewSet):
+    serializer_class = DosagesSerializer
+    authentication_classes = (
+        authentication.SessionAuthentication,
+        authentication.TokenAuthentication,
+    )
+    queryset = Dosages.objects.all()
