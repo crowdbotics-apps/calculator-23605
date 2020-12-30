@@ -61,6 +61,50 @@ class CustomText(models.Model):
     def field(self):
         return "title"
 
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
 
 class HomePage(models.Model):
     """
@@ -70,6 +114,38 @@ class HomePage(models.Model):
     """
 
     body = models.TextField()
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
 
     @property
     def api(self):
@@ -134,9 +210,9 @@ class Indications(models.Model):
     info = models.TextField()
     dosages = models.OneToOneField(
         "home.Dosages",
-        on_delete=models.CASCADE,
         null=True,
         blank=True,
+        on_delete=models.CASCADE,
         related_name="indications_dosages",
     )
 
@@ -145,4 +221,51 @@ class Dosages(models.Model):
     "Generated Model"
     type = models.CharField(
         max_length=64,
+    )
+    isWeightAdjusted = models.BooleanField(
+        null=True,
+        blank=True,
+    )
+    isContinuous = models.BooleanField(
+        null=True,
+        blank=True,
+    )
+    doseLow = models.DecimalField(
+        max_digits=30,
+        decimal_places=10,
+        null=True,
+        blank=True,
+    )
+    doseHigh = models.DecimalField(
+        max_digits=30,
+        decimal_places=10,
+        null=True,
+        blank=True,
+    )
+    doseMax = models.DecimalField(
+        max_digits=30,
+        decimal_places=10,
+        null=True,
+        blank=True,
+    )
+    unitBase = models.CharField(
+        max_length=16,
+        null=True,
+        blank=True,
+    )
+    unitHourly = models.CharField(
+        max_length=16,
+        null=True,
+        blank=True,
+    )
+    multiplierHourly = models.DecimalField(
+        max_digits=30,
+        decimal_places=10,
+        null=True,
+        blank=True,
+    )
+    frequency = models.CharField(
+        max_length=64,
+        null=True,
+        blank=True,
     )
