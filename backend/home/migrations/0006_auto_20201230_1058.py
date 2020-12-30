@@ -6,53 +6,61 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('home', '0005_auto_20201230_1049'),
+        ("home", "0005_auto_20201230_1049"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='dosages',
-            name='doseHigh',
-            field=models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True),
+            model_name="dosages",
+            name="doseHigh",
+            field=models.DecimalField(
+                blank=True, decimal_places=10, max_digits=30, null=True
+            ),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='doseLow',
-            field=models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True),
+            model_name="dosages",
+            name="doseLow",
+            field=models.DecimalField(
+                blank=True, decimal_places=10, max_digits=30, null=True
+            ),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='doseMax',
-            field=models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True),
+            model_name="dosages",
+            name="doseMax",
+            field=models.DecimalField(
+                blank=True, decimal_places=10, max_digits=30, null=True
+            ),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='frequency',
+            model_name="dosages",
+            name="frequency",
             field=models.CharField(blank=True, max_length=64, null=True),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='isContinuous',
+            model_name="dosages",
+            name="isContinuous",
             field=models.BooleanField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='isWeightAdjusted',
+            model_name="dosages",
+            name="isWeightAdjusted",
             field=models.BooleanField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='multiplierHourly',
-            field=models.DecimalField(blank=True, decimal_places=10, max_digits=30, null=True),
+            model_name="dosages",
+            name="multiplierHourly",
+            field=models.DecimalField(
+                blank=True, decimal_places=10, max_digits=30, null=True
+            ),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='unitBase',
+            model_name="dosages",
+            name="unitBase",
             field=models.CharField(blank=True, max_length=16, null=True),
         ),
         migrations.AddField(
-            model_name='dosages',
-            name='unitHourly',
+            model_name="dosages",
+            name="unitHourly",
             field=models.CharField(blank=True, max_length=16, null=True),
         ),
     ]

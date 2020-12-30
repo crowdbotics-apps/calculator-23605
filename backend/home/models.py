@@ -105,6 +105,50 @@ class CustomText(models.Model):
     def field(self):
         return "title"
 
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
 
 class HomePage(models.Model):
     """
@@ -114,6 +158,38 @@ class HomePage(models.Model):
     """
 
     body = models.TextField()
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
 
     @property
     def api(self):
@@ -231,41 +307,49 @@ class Dosages(models.Model):
         blank=True,
     )
     doseLow = models.DecimalField(
-        max_digits=30,
-        decimal_places=10,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=10,
     )
     doseHigh = models.DecimalField(
-        max_digits=30,
-        decimal_places=10,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=10,
     )
     doseMax = models.DecimalField(
-        max_digits=30,
-        decimal_places=10,
         null=True,
         blank=True,
+        max_digits=30,
+        decimal_places=10,
     )
     unitBase = models.CharField(
-        max_length=16,
         null=True,
         blank=True,
+        max_length=16,
     )
     unitHourly = models.CharField(
-        max_length=16,
         null=True,
         blank=True,
+        max_length=16,
     )
     multiplierHourly = models.DecimalField(
+        null=True,
+        blank=True,
         max_digits=30,
         decimal_places=10,
-        null=True,
-        blank=True,
     )
     frequency = models.CharField(
-        max_length=64,
         null=True,
         blank=True,
+        max_length=64,
     )
+
+
+class Parameters(models.Model):
+    "Generated Model"
+    weight = models.IntegerField()
+    height = models.IntegerField()
+    age = models.IntegerField()
+    kidneyfunction = models.IntegerField()
