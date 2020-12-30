@@ -149,6 +149,50 @@ class CustomText(models.Model):
     def field(self):
         return "title"
 
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
+    def __str__(self):
+        return self.title
+
+    @property
+    def api(self):
+        return f"/api/v1/customtext/{self.id}/"
+
+    @property
+    def field(self):
+        return "title"
+
 
 class HomePage(models.Model):
     """
@@ -158,6 +202,38 @@ class HomePage(models.Model):
     """
 
     body = models.TextField()
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
+
+    @property
+    def api(self):
+        return f"/api/v1/homepage/{self.id}/"
+
+    @property
+    def field(self):
+        return "body"
 
     @property
     def api(self):
@@ -266,11 +342,11 @@ class Medications(models.Model):
     )
     mechanism = models.TextField()
     interactions = models.TextField()
-    indications = models.OneToOneField(
+    indications = models.ForeignKey(
         "home.Indications",
+        on_delete=models.CASCADE,
         null=True,
         blank=True,
-        on_delete=models.CASCADE,
         related_name="medications_indications",
     )
 
@@ -284,11 +360,11 @@ class Indications(models.Model):
         max_length=256,
     )
     info = models.TextField()
-    dosages = models.OneToOneField(
+    dosages = models.ForeignKey(
         "home.Dosages",
+        on_delete=models.CASCADE,
         null=True,
         blank=True,
-        on_delete=models.CASCADE,
         related_name="indications_dosages",
     )
 
